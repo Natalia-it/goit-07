@@ -26,24 +26,88 @@
                 <li class="item"><a href="" class="site-link link">Contacts</a></li>
             </ul>
         </nav>
+
         <address class="address">
             <ul class="auth-nav list"> 
                 <li class="item"><a href="mailto:info@devstudio.com" class="auth-link link">info@devstudio.com</a></li>
                 <li class="item"><a href="tel:+110001111111" class="auth-link link">+11 (000) 111-11-11</a></li>
             </ul> 
         </address>
+
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
+            <svg class="mobile-menu-open-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-burger" stroke="var(--title-text-color)"></use>
+            </svg>
+        </button>
         </div>
 
+
+</div>
+<div class="mobile-menu" data-menu>
+    <div class="mobile-menu-container container">
+        <div>       
+    <button type="button" class="mobile-modal-close-btn" data-menu-close>
+        <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+    </button>
+   
+    <ul class="mobile-site-nav list">
+        <li class="mobile-item"><a href="./index.html" class="mob-site-link current">Studio</a></li>
+        <li class="mobile-item"><a href="./portfolio.html" class="mob-site-link">Portfolio</a></li>
+        <li class="mobile-item"><a href="" class="mob-site-link">Contacts</a></li>
+    </ul>
+</div>
+<div>
+    <address class="mobile-address">
+        <ul class="mob-auth-nav list"> 
+            <li class="mobile-item"><a href="tel:+110001111111" class="mob-auth-link link">+11 (000) 111-11-11</a></li>
+            <li class="mobile-item"><a href="mailto:info@devstudio.com" class="mob-email-auth-link link">info@devstudio.com</a></li>
+            
+        </ul> 
+    </address>
+
+    <ul class="mob-team-soc-list list">
+        <li class="mob-team-soc-item">
+            <a href="" class="team-soc-link link" target="_blank" rel="noopener noreferrer">
+                <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+            </a></li>
+        <li class="mob-team-soc-item">
+            <a href="" class="team-soc-link link" target="_blank" rel="noopener noreferrer">
+                <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+            </a></li>
+        <li class="mob-team-soc-item">
+            <a href="" class="team-soc-link link" target="_blank" rel="noopener noreferrer">
+                <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+            </a></li>
+        <li class="mob-team-soc-item">
+            <a href="" class="team-soc-link link" target="_blank" rel="noopener noreferrer">
+                <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+            </a></li>
+    </ul>
+</div>
+</div>
+</div>
     </header> 
 
     <main>
-        <section class="hero-page">
+        <!-- <section class="hero-page">
             <div class="hero-part container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-button" data-modal-open type="button">Order Service</button>
             </div>
-        </section>
-        <section class="advantage-page">
+        </section> -->
+
+
+        <!-- <section class="advantage-page">
             <div class="container">
              <h2 hidden class="work-base">Our advantages</h2>
             <ul class="advantage list">
@@ -86,8 +150,10 @@
                 </li>   
             </ul>
             </div>
-        </section>
-        <section class="work-page">
+        </section> -->
+
+
+        <!-- <section class="work-page">
             <div class="container">
             <h2 class="work-base">What are we doing</h2>
             <ul class="working list">
@@ -102,13 +168,18 @@
                 </li>
             </ul>
             </div>
-        </section>
-        <section class="work-team">
+        </section> -->
+
+
+        
+        <!-- <section class="work-team">
             <div class="container">
             <h2 class="work-base">Our Team</h2>
             <ul class="team list">
                 <li class="team-card">
-                    <img src="./images/worker1.jpg" alt="Man with beard and blue shirt" >
+                    <img 
+                    srcset="./images/worker1@2x.jpg 2x"
+                    src="./images/worker1.jpg" alt="Man with beard and blue shirt" >
                     <div class="team-descr"><h3 class="main-team">Mark Guerrero</h3><p class="main-p">Product Designer</p>
                         <ul class="team-soc-list list">
                             <li class="team-soc-item">
@@ -140,7 +211,9 @@
                      
                 </li>
                 <li class="team-card">
-                    <img src="./images/worker2.jpg" alt="Smiling man in blue shirt" >
+                    <img 
+                    srcset="./images/worker2@2x.jpg 2x"
+                    src="./images/worker2.jpg" alt="Smiling man in blue shirt" >
                 <div class="team-descr"><h3 class="main-team">Tom Ford</h3><p class="main-p">Frontend Developer</p>
                     <ul class="team-soc-list list">
                         <li class="team-soc-item">
@@ -171,7 +244,9 @@
                     
                 </li>
             <li class="team-card">
-                    <img src="./images/worker3.jpg" alt="Girl with a long dark hair" >
+                    <img 
+                    srcset="./images/worker3@2x.jpg 2x"
+                    src="./images/worker3.jpg" alt="Girl with a long dark hair" >
                 <div class="team-descr"><h3 class="main-team">Camila Garcia</h3><p class="main-p">Marketing</p>
                     <ul class="team-soc-list list">
                         <li class="team-soc-item">
@@ -201,7 +276,9 @@
                     </ul>    </div>        
             </li>
             <li class="team-card">
-                    <img src="./images/worker4.jpg" alt="Man in grey T-shirt" >
+                    <img 
+                    srcset="./images/worker4@2x.jpg 2x"
+                    src="./images/worker4.jpg" alt="Man in grey T-shirt" >
                     <div class="team-descr"><h3 class="main-team">Daniel Wilson</h3><p class="main-p">UI Designer</p>
                         <ul class="team-soc-list list">
                             <li class="team-soc-item">
@@ -232,9 +309,11 @@
             </li>
             </ul>
         </div>
-        </section>
+        </section> -->
 
-        <section class="customers">
+
+
+        <!-- <section class="customers">
             <div class="container">
             <h2 class="work-base">Customers</h2>   
        <ul class="customers-all list">
@@ -282,10 +361,12 @@
         </li>
        </ul>
     </div>
-        </section>
-    </main>
-    <footer class="footer">
+        </section> -->
 
+    </main>
+
+    <footer class="footer">
+<!-- 
         <div class="footer-container container">
 
             <div class="footer-content">
@@ -341,11 +422,11 @@
     </form>  
 </div>
     
-</div>
+</div> -->
 
 </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-btn-icon" width="8" height="8">
@@ -406,7 +487,8 @@
     
     
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
      
